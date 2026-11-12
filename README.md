@@ -8,6 +8,14 @@ Place `AHFormatterV75-7.5E-MR7.x86_64.rpm` and `AHFormatter.lic` in the same dir
 $ docker build --tag ahformatterv75-7.5e-mr7.x86_64:latest .
 ```
 
+### ARM (aarch64)
+
+The Graviton2 build of the rpm runs on linux/arm64 hosts such as Apple silicon Macs. Place `AHFormatterV75_Graviton2-7.5E-MR7.aarch64.rpm` next to the Dockerfile and pass its name as `AHF_RPM`.
+
+```shellsession
+$ docker build --build-arg AHF_RPM=AHFormatterV75_Graviton2-7.5E-MR7.aarch64.rpm --tag ahformatterv75-7.5e-mr7.aarch64:latest .
+```
+
 ## Run
 
 ```shellsession
