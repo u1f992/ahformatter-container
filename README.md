@@ -4,7 +4,7 @@ Dockerfile for running [Antenna House Formatter](https://www.antenna.co.jp/AHF/)
 
 ## Build
 
-Place `AHFormatterV75-7.5E-MR7.x86_64.rpm` and `AHFormatter.lic` in the same directory as the Dockerfile. The image installs the rpm as described in the [Antenna House Formatter V7.5 Install Manual for Linux](https://www.antenna.co.jp/AHF/InstallManual/V75/html/Linux.html).
+Place `AHFormatterV75-7.5E-MR7.x86_64.rpm` and `AHFormatter.lic` in the same directory as the Dockerfile. The image installs the rpm as described in the [Antenna House Formatter V7.5 Install Manual](https://www.antenna.co.jp/AHF/InstallManual/V75/InstallManual.html).
 
 ```shellsession
 $ docker build --tag ahformatterv75-7.5e-mr7.x86_64:latest .
