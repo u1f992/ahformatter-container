@@ -35,3 +35,12 @@ Add `<font-folder path="/usr/share/fonts" recursive="true"/>` to `font-config.xm
 ```shellsession
 $ docker run --rm --user "$(id -u):$(id -g)" --volume ./font-config.xml:/usr/AHFormatterV75/etc/font-config.xml:ro --volume /usr/share/fonts:/usr/share/fonts:ro --volume .:/data ahformatterv75-7.5e-mr7.x86_64:latest -d input.fo -o output.pdf
 ```
+
+## Checksums
+
+SHA-256 of the rpm files this Dockerfile was written for, for reference.
+
+```
+816dbb5d7602334c4e7bb11cb9179cb0cf68ace304b5722fece5d61376e541ed  AHFormatterV75-7.5E-MR7.x86_64.rpm
+fa9d22c701f28b8d6397214463b9a8ad974e89e8a53857a3c738f7c0bce7f117  AHFormatterV75_Graviton2-7.5E-MR7.aarch64.rpm
+```
